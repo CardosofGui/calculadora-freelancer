@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Freelancer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sura:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+   
+    <header>
+        <div class="center">
+            <div class="container-header">
+                <div class="img-calculadora"></div>
+                <h2>CALCULADORA FREELANCER</h2>
+                <div class="clear"></div>
+            </div><!--CONTAINER-HEADEAR-->
+        </div><!--CENTER-->
+    </header><!--HEADER-->
+
+    <section class="calculadora-freelancer">
+        <div class="center">
+            <div class="container-calculadora-freelancer">
+                <div class="texto-descritivo">
+                    <h2 id="titulo-descricao">Calculadora Freelancer</h2>
+                    <p id="texto-descricao">Calcule o valor de suas horas trabalhadas em seus projetos de freelancer!</p>
+                </div><!--TEXTO-DESCRITIVO-->
+                <div class="img-money"></div><!--IMG-MONEY-->
+            </div><!--CONTAINER-CALCULADORA-FREELANCER-->
+            <div class="container-calculadora-freelancer">
+                <form action="" id="calculo-freelancer">
+                    <div class="diario-investido content-form">
+                        <p class="titulo-form">Tempo diário investido no projeto</p>
+                        <input type="text" name="txtInvestido" id="txtInvestido" onclick="descricao(0);" autocomplete="off">
+                    </div>
+                    <div class="diario-investido content-form">
+                        <p class="titulo-form">Dias efetivos trabalhando</p>
+                        <input type="text" name="txtEfetivo" id="txtEfetivo" onclick="descricao(1);" autocomplete="off">
+                    </div>
+                    <div class="diario-investido content-form">
+                        <p class="titulo-form">Dias de férias do projeto</p>
+                        <input type="text" name="txtFerias" id="txtFerias" onclick="descricao(2);" autocomplete="off">
+                    </div>
+                    <div class="diario-investido content-form">
+                        <p class="titulo-form">Valor total do projeto</p>
+                        <input type="text" name="txtProjeto" id="txtProjeto" onclick="descricao(3);" autocomplete="off">
+                    </div>
+                    <div class="button-calcular content-form">
+                        <input type="submit" value="Calcular" onclick="calcular();">
+                    </div>
+                    <div class="content-form">
+                        <h2 id="valor-projeto"></h2>
+                    </div>
+                </form><!--FORM-->
+            </div><!--CONTAINER-CALCULADORA-FREELANCER-->
+            <div class="clear"></div><!--CLEAR-->
+        </div><!--CENTER-->
+    </section><!--SECTION-->
+
+    <footer>
+        <div class="center">
+            <div class="container-header">
+                <h2>Feito por: Guilherme Cardoso Ferreira</h2>
+                <div class="clear"></div>
+            </div><!--CONTAINER-HEADEAR-->
+        </div><!--CENTER-->
+    </footer><!--FOOTER-->
+</body>
+</html>
